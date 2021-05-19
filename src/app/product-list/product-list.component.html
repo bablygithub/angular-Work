@@ -4,14 +4,15 @@
   <h3>
     <a [title]="sayHello(product.name)">{{product.name}}</a>
 <h3>
-  
+
   <p *ngIf="product.description">
     Description:{{product.description}}
     Price:{{product.price}}
   </p>
   <button (click)="share()">Share Me</button>
 
-  <app-product-alert [product]="product"> </app-product-alerts>
+  <app-product-alert  [product]="product" 
+  (notify)="onNotify()"> </app-product-alerts>
 
 </div>
 

@@ -20,6 +20,10 @@ export class ProductListComponent {
   sayHello(productName: string) {
     return productName + 'details';
   }
+
+   onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 }
 
 /*
