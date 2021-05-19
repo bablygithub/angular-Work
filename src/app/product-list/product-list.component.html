@@ -5,8 +5,11 @@
 
   <p *ngFor="product.description">
     Description:{{product.description}}
+    Price:{{product.price}}
   </p>
-  <button (click)="share()">Share</button>
+  <button (click)="share()">Share Me</button>
+
+  <app-product-alerts> </app-product-alerts>
 
 </div>
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { products, shoes } from '../products';
+import { products, shoes, Product } from '../products';
 
 console.log('products:');
 console.log(JSON.stringify(products));
@@ -11,11 +11,7 @@ console.log(JSON.stringify(products));
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products.concat(shoes);
-
-  productsAsString() {
-    return JSON.stringify(products);
-  }
+  products: Array<Product> = products.concat(shoes);
 
   share() {
     window.alert('The product has been shared!');
