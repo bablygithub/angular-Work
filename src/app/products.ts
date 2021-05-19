@@ -18,7 +18,20 @@ export const products = [
     description: ''
   }
 ];
-
+export const shoes = [
+  {
+    id: 4,
+    name: 'Nikes',
+    price: 100,
+    description: 'Fancy NIkes'
+  },
+  {
+    id: 5,
+    name: 'ADIDAS',
+    price: 200,
+    description: 'Fancy ADIDAS'
+  }
+];
 
 /*
 Copyright Google LLC. All Rights Reserved.

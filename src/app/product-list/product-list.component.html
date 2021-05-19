@@ -1,11 +1,15 @@
 <h2>Products</h2>
 <h3> Look at our products!!</h3>
 <div *ngFor="let product of products">
-  <p>{{product.name}}</p>
-  <p style="color:red ;border:2px solid">{{product.description}}</p>
+  <a [title]="sayHello(product.name)">{{product.name}}</a>
+
+  <p *ngFor="product.description">
+    Description:{{product.description}}
+  </p>
   <button (click)="share()">Share</button>
 
 </div>
+
 
 
 <!-- 
